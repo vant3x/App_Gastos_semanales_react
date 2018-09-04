@@ -17,9 +17,10 @@ class Formulario extends React.Component {
 
     console.log(gasto);
     // agregarlo y enviarlo por props
-
+    this.props.agregarGasto(gasto);
     // resetear el formulario (opcional)
-    e.currentTarget.reset();  } 
+    e.currentTarget.reset();  
+  } 
   render() {
     return(
       <form onSubmit={this.crearGasto}>
