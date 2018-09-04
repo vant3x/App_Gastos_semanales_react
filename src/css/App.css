@@ -1,13 +1,14 @@
 @import url('normalize.css');
 @import url('skeleton.css');
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 .alert p {
   margin-bottom: 0!important;
 }
 body {
+  font-family: 'Roboto', sans-serif;
   background: #000428;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #004e92, #000428);  
-  background: linear-gradient(to right, #004e92, #000428); 
+  background: -webkit-linear-gradient(to right, #075fac, #000428);  
+  background: linear-gradient(to right, #075fac, #000428); 
 }
 header {
   margin: 30px 0;
@@ -32,13 +33,12 @@ header {
 }
 h1 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   color: white;
   text-align: center;
   font-size: 4.8rem!important;
 }
 h2 {
-  font-family: 'Raleway', sans-serif;
   font-weight: 100;
   color:#004e92;
   margin-bottom:30px;
