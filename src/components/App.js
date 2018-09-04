@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 // components
 import Header from './Header';
 import Formulario from './Formulario';
+import Listado from './Listado';
+
 import '../css/App.css';
 
 class App extends Component {
@@ -26,7 +28,7 @@ class App extends Component {
 
     // ponerlo en state
     this.setState({
-      gastos: gastos
+      gastos
     })
 
   }
@@ -45,6 +47,9 @@ class App extends Component {
               />
             </div>
             <div className="one-half column">
+             <Listado
+              gastos={this.state.gastos}
+             />
             </div>
           </div>
         </div>
