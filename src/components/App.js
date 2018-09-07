@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import '../css/App.css';
+
 // components
 import Header from './Header';
 import Formulario from './Formulario';
 import Listado from './Listado';
+// helpers
+import {validarPresupuesto} from '../helper';
 
-import '../css/App.css';
 
 class App extends Component {
 
@@ -14,6 +17,25 @@ class App extends Component {
       presupuesto: '',
       restante: '',
       gastos: {}
+    }
+  }
+
+  componentDidMount() {
+    this.obtenerPresupuesto();
+  }
+
+  obtenerPresupuesto = () => {
+    let presupuesto = prompt('Cuál es el presupuesto');
+
+    let resultado = validarPresupuesto(presupuesto);
+    if (resultado) {
+      this.setState({
+        presupuesto: presupuesto,
+        restante: presupuesto
+      })
+    } else {
+      console.log('Presupuesto no valido');
+      this.obtenerPresupuesto();
     }
   }
 
@@ -32,7 +54,6 @@ class App extends Component {
     })
 
   }
-
   render() {
     return (  
       <div className="App container">
