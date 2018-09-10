@@ -7,8 +7,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   background: #000428;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #075fac, #000428);  
-  background: linear-gradient(to right, #075fac, #000428); 
+  background: -webkit-linear-gradient(to right, #07ac91, #052eab);  
+  background: linear-gradient(to right, #07ac91, #052eab); 
 }
 header {
   margin: 30px 0;
